@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selenium Docker Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 10px; border-radius: 5px; }
+        .passed { color: green; font-weight: bold; }
+        .failed { color: red; font-weight: bold; }
+        .output { background-color: #f8f8f8; padding: 10px; border: 1px solid #ddd; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Selenium Docker Test Report</h1>
+        <p><strong>Generated:</strong> 2026-04-21 10:11:25</p>
+        <p><strong>Status:</strong> <span class="failed">FAILED</span></p>
+    </div>
+    
+    <h2>Test Output</h2>
+    <div class="output">Starting Selenium Docker Tests...
+==================================================
+✓ Successfully connected to Selenium container
+✓ Navigated to Google homepage
+✗ Test FAILED with error: Message: element not interactable
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x583da049bb6a <unknown>
+#1 0x583d9fe9d070 <unknown>
+#2 0x583d9feeb5a1 <unknown>
+#3 0x583d9fee985b <unknown>
+#4 0x583d9fee4e07 <unknown>
+#5 0x583d9ff38969 <unknown>
+#6 0x583d9fee35cf <unknown>
+#7 0x583d9fee4391 <unknown>
+#8 0x583da046104b <unknown>
+#9 0x583da046400d <unknown>
+#10 0x583da044d808 <unknown>
+#11 0x583da0464ba0 <unknown>
+#12 0x583da0434280 <unknown>
+#13 0x583da0488db8 <unknown>
+#14 0x583da0488f88 <unknown>
+#15 0x583da049a5de <unknown>
+#16 0x7efd54739aa4 <unknown>
+#17 0x7efd547c6a64 __clone
+
+✓ Browser session closed
+
+--- Form Interaction Test ---
+✓ Navigated to demo form page
+✓ Filled out form fields
+✗ Form test FAILED with error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"input[type='submit']"}
+  (Session info: chrome=147.0.7727.55); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+#0 0x5c0fa058fb6a <unknown>
+#1 0x5c0f9ff91265 <unknown>
+#2 0x5c0f9ffe3f76 <unknown>
+#3 0x5c0f9ffe41b1 <unknown>
+#4 0x5c0fa002f7d4 <unknown>
+#5 0x5c0fa002c969 <unknown>
+#6 0x5c0f9ffd75cf <unknown>
+#7 0x5c0f9ffd8391 <unknown>
+#8 0x5c0fa055504b <unknown>
+#9 0x5c0fa055800d <unknown>
+#10 0x5c0fa0541808 <unknown>
+#11 0x5c0fa0558ba0 <unknown>
+#12 0x5c0fa0528280 <unknown>
+#13 0x5c0fa057cdb8 <unknown>
+#14 0x5c0fa057cf88 <unknown>
+#15 0x5c0fa058e5de <unknown>
+#16 0x77a8593a2aa4 <unknown>
+#17 0x77a85942fa64 __clone
+
+✓ Browser session closed
+
+==================================================
+TEST SUMMARY:
+Google Search Test: FAILED
+Form Interaction Test: FAILED
+✗ Some tests FAILED!
+</div>
+    
+    <h2>Error Output</h2>
+    <div class="output">No errors</div>
+</body>
+</html>
+        
